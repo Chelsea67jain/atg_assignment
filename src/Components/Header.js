@@ -175,30 +175,28 @@ const Header = () => {
 
             <div
               class="col-4"
-              style={{
-                width: 320,
-                height: 42,
-                borderRadius: 21,
-                backgroundColor: "#F2F2F2",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+              style={{ display: "flex", alignItems: "center",position:"relative"  }}
             >
-              <div
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search for your favorite groups in ATG"
                 style={{
+                  backgroundColor: "#F2F2F2",
+                  width: 330,
+                  height: 42,
+                  borderRadius: 21,
                   color: "#5C5C5C",
-
                   fontSize: 14,
+                  padding:10,
+                  marginLeft:10
                 }}
-              >
-                <i className="bi bi-search" width="22" height="22"></i>
+              />
 
-                <span style={{ marginLeft: 20 }}>
-                  {" "}
-                  Search for your favorite groups in ATG
-                </span>
-              </div>
+              <span style={{position:'absolute',left:320}}>
+                {" "}
+                <i className="bi bi-search" width="22" height="22"></i>
+              </span>
             </div>
 
             <div

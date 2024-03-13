@@ -42,7 +42,7 @@ export default function HomePage() {
       </div>
 
       <PostNavBarComponent  onChange={handleShowGroupsComponent}/>
-
+     
       <PostComponent
         type={"✍️ Article"}
         heading={"What if famous brands had regular fonts? Meet RegulaBrands!"}

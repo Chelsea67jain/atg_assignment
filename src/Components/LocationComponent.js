@@ -16,18 +16,31 @@ const LocationComponent = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-
+          alignItems:"center",
           fontFamily: "IBM Plex sans,sans-serif",
         }}
       >
-        <div className="bi bi-geo-alt-fill"> Enter your location</div>
-
-        <i className="bi bi-search"></i>
+        <i className="bi bi-geo-alt-fill"> </i>
+        <input
+          type="text"
+          className="form-control border-0" // added border-0 class to remove border
+          placeholder="Enter your location"
+          style={{ fontFamily: "IBM Plex sans,sans-serif" }}
+        />
+        <i className="bi bi-pencil-fill"></i>
       </div>
-      <hr />
-      <div style={{ display:'flex',fontSize: 12,fontWeight:300,color:'grey' }}>
+
+      <hr style={{margin:5}}/>
+      <div
+        style={{
+          display: "flex",
+          fontSize: 12,
+          fontWeight: 300,
+          color: "grey",
+        }}
+      >
         <div className="bi bi-exclamation-circle-fill"></div>
-        <span style={{ marginLeft:2,width:210 }}>
+        <span style={{ marginLeft: 2, width: 210 }}>
           Your location will help us serve better and extend a personalised
           experience.
         </span>

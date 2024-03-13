@@ -33,7 +33,7 @@ const [changeBtn,setChangeBtn]=useState(false);
               aria-current="page"
               href="#"
             >
-              All Posts(32)
+              <u>All Posts(32)</u>
             </a>
           </li>
           <li class="nav-item">
@@ -76,7 +76,7 @@ const [changeBtn,setChangeBtn]=useState(false);
         style={{
           position: "absolute",
           display: "flex",
-          left: 850,
+          left: 820,
           fontFamily: "IBM Plex Sans,sans-serif",
         }}
       >
@@ -95,7 +95,8 @@ const [changeBtn,setChangeBtn]=useState(false);
             fontSize: 15,
           }}
         >
-          <span style={{marginRight:5}}> Write a Post</span> <i className="bi bi-caret-down-fill"></i>
+          <span style={{ marginRight: 5 }}> Write a Post</span>{" "}
+          <i className="bi bi-caret-down-fill"></i>
         </button>
 
         {changeBtn ? (
@@ -149,6 +150,7 @@ const [changeBtn,setChangeBtn]=useState(false);
           </button>
         )}
       </div>
+     
     </div>
   );
 }
