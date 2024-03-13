@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.img-style{
+  width:1440;
+  height:440
+}
+
+
+@media (max-width: 768px) {
+  .navbar-md-hide {
+    display: none !important;
+  }
+}
+
+.img-div img {
+    max-width: 100%;
+    
+  }
+
+
+ 
+
+  @media screen and (max-width:375){
+  
+  }
+

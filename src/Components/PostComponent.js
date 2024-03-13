@@ -11,6 +11,7 @@ const PostComponent = (props) => {
         position: "relative",
         top: 50,
         left: 220,
+      
        marginTop:15,
 
         border: "1px solid #C4C4C4",

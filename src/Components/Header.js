@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import SignUpComponent from "./SignUpComponent";
 import LoginComponent from "./LoginComponent";
+import '../App.css';
 
 const Header = () => {
   const [open,setOpen]=useState(false)
@@ -152,7 +153,10 @@ const Header = () => {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light" style={{ height: 72 }}>
+    <nav
+      className="navbar navbar-expand-lg navbar-light navbar-md-hide"
+      style={{ height: 72 }}
+    >
       <div class="container-fluid">
         <div class="container text-center">
           <div
@@ -189,12 +193,11 @@ const Header = () => {
                 }}
               >
                 <i className="bi bi-search" width="22" height="22"></i>
-               
-                  <span style={{ marginLeft: 20 }}>
-                    {" "}
-                    Search for your favorite groups in ATG
-                  </span>
-                
+
+                <span style={{ marginLeft: 20 }}>
+                  {" "}
+                  Search for your favorite groups in ATG
+                </span>
               </div>
             </div>
 

@@ -1,6 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react';
 
-const PostNavBarComponent = () => {
+const PostNavBarComponent = (props) => {
+
+const [changeBtn,setChangeBtn]=useState(false);
+
+  const handleJoinGroup=()=>{
+    setChangeBtn(!changeBtn);
+   
+ props.onChange(true);
+    
+  }
+
   return (
     <div
       style={{
@@ -74,7 +84,7 @@ const PostNavBarComponent = () => {
           type="submit"
           class="btn btn-lg"
           style={{
-            width: 133,
+            width: 143,
             height: 36,
             backgroundColor: "#EDEEF0",
             color: "#000",
@@ -85,33 +95,59 @@ const PostNavBarComponent = () => {
             fontSize: 15,
           }}
         >
-          Write a Post <i className="bi bi-caret-down-fill"></i>
+          <span style={{marginRight:5}}> Write a Post</span> <i className="bi bi-caret-down-fill"></i>
         </button>
 
-        
-
-        <button
-          type="button"
-          class="btn btn-primary"
-        //  data-bs-toggle="modal"
-         // data-bs-target="#exampleModal"
-          style={{
-            width: 125,
-            height: 36,
-            color: "#fff",
-            borderRadius: 4,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: 15,
-            position: "relative",
-            left: 10,
-          }}
-        >
-          <i className="bi bi-people-fill"></i>{" "}
-          <span style={{ marginLeft: 10 }}> Join group </span>
-        </button>
-        
+        {changeBtn ? (
+          <>
+            {" "}
+            <button
+              type="button"
+              class="btn btn-outline"
+              onClick={handleJoinGroup}
+              //  data-bs-toggle="modal"
+              // data-bs-target="#exampleModal"
+              style={{
+                width: 134,
+                height: 36,
+                color: "#6A6A6B",
+                borderRadius: 4,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontSize: 15,
+                position: "relative",
+                left: 10,
+              }}
+            >
+              <i className="bi bi-arrow-right-square"></i>
+              <span style={{ marginLeft: 5 }}> Leave group </span>
+            </button>
+          </>
+        ) : (
+          <button
+            type="button"
+            class="btn btn-primary"
+            onClick={handleJoinGroup}
+            //  data-bs-toggle="modal"
+            // data-bs-target="#exampleModal"
+            style={{
+              width: 125,
+              height: 36,
+              color: "#fff",
+              borderRadius: 4,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: 15,
+              position: "relative",
+              left: 10,
+            }}
+          >
+            <i className="bi bi-people-fill"></i>
+            <span style={{ marginLeft: 10 }}> Join group </span>
+          </button>
+        )}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const LocationComponent = () => {
       style={{
         marginTop: 20,
         position: "absolute",
-        top: 680,
+        top: 800,
         left: 1070,
         bottom: 1000,
         width: 243,

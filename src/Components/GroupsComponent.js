@@ -5,7 +5,7 @@ const GroupsComponent = () => {
     <div
       style={{
         position: "absolute",
-        top: 820,
+        top: 940,
         left: 1070,
         fontSize: 14,
         fontFamily: "IBM Plex Sans,sans-serif",
@@ -134,6 +134,21 @@ const GroupsComponent = () => {
         >
           Follow
         </div>
+      </div>
+
+      <div
+        style={{
+          width: 70,
+          height: 16,
+          fontSize:12,
+          color:'#2F6CE5',
+          textAlign: "right",
+          position:'absolute',
+          left:130,
+          top:280
+        }}
+      >
+        See more...
       </div>
     </div>
   );
