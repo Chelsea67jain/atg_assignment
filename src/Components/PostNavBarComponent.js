@@ -12,18 +12,7 @@ const [changeBtn,setChangeBtn]=useState(false);
   }
 
   return (
-    <div
-      style={{
-        width: 1040,
-        position: "relative",
-        top: 50,
-        left: 220,
-        fontSize: 14,
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "row",
-      }}
-    >
+    <div className="Post-navbar-css">
       <div>
         <ul class="nav">
           <li class="nav-item">
@@ -33,11 +22,15 @@ const [changeBtn,setChangeBtn]=useState(false);
               aria-current="page"
               href="#"
             >
-              <u>All Posts(32)</u>
+              All Posts(32)
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style={{ color: "#8A8A8A" }}>
+            <a
+              class="nav-link"
+              href="#"
+              style={{ color: "#8A8A8A" }}
+            >
               Article
             </a>
           </li>
@@ -73,28 +66,9 @@ const [changeBtn,setChangeBtn]=useState(false);
       </div>
 
       <div
-        style={{
-          position: "absolute",
-          display: "flex",
-          left: 820,
-          fontFamily: "IBM Plex Sans,sans-serif",
-        }}
+        className='navbar-btn-css'
       >
-        <button
-          type="submit"
-          class="btn btn-lg"
-          style={{
-            width: 143,
-            height: 36,
-            backgroundColor: "#EDEEF0",
-            color: "#000",
-            borderRadius: 4,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: 15,
-          }}
-        >
+        <button type="submit" class="btn btn-lg" className="Write-post-btn-css">
           <span style={{ marginRight: 5 }}> Write a Post</span>{" "}
           <i className="bi bi-caret-down-fill"></i>
         </button>
@@ -119,6 +93,7 @@ const [changeBtn,setChangeBtn]=useState(false);
                 fontSize: 15,
                 position: "relative",
                 left: 10,
+                
               }}
             >
               <i className="bi bi-arrow-right-square"></i>
@@ -150,7 +125,6 @@ const [changeBtn,setChangeBtn]=useState(false);
           </button>
         )}
       </div>
-     
     </div>
   );
 }

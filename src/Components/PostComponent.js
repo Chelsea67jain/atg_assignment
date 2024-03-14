@@ -2,23 +2,19 @@ import React from "react";
 import LocationComponent from "./LocationComponent";
 
 const PostComponent = (props) => {
-
   return (
-    <div
+    <div className="Post-component-div"
       style={{
-        width: 692,
-        height: props.heading==="Software Developer"?250:472,
-        position: "relative",
-        top: 50,
-        left: 220,
       
-       marginTop:15,
-
-        border: "1px solid #C4C4C4",
-        borderRadius: "4px",
+        height: props.heading === "Software Developer" ? 250 : 472,
+      
       }}
     >
-     {props.heading==="Software Developer"?<></>: <img src={`${props.bannerImage}`} width="690" height="220" />}
+      {props.heading === "Software Developer" ? (
+        <></>
+      ) : (
+        <img src={`${props.bannerImage}`} className="bannerimage-css" />
+      )}
       <div
         style={{
           fontFamily: "IBM Plex Sans,sans-serif",
@@ -27,17 +23,15 @@ const PostComponent = (props) => {
         }}
       >
         <div style={{ fontWeight: 500, fontSize: 18 }}>{props.type}</div>
-        <div
+        <div  className="heading-css"
           style={{
-            fontSize: 22,
+           
             width:
               props.heading ===
               "Finance & Investment Elite Social Mixer @Lujiazui"
                 ? 700
                 : 650,
-            marginTop: 10,
-            fontWeight: "bold",
-            display: "flex",
+          
           }}
         >
           <span
@@ -52,10 +46,9 @@ const PostComponent = (props) => {
             {" "}
             {props.heading}
           </span>
-          <span
+          <span className="three-dots-css"
             style={{
-              display: "flex",
-              justifyContent: "flex-end",
+             
               width:
                 props.heading ===
                 "Finance & Investment Elite Social Mixer @Lujiazui"
@@ -67,7 +60,8 @@ const PostComponent = (props) => {
           </span>
         </div>
 
-        {props.heading=== "Finance & Investment Elite Social Mixer @Lujiazui" ? (
+        {props.heading ===
+        "Finance & Investment Elite Social Mixer @Lujiazui" ? (
           <div
             style={{
               fontSize: 15,
@@ -87,27 +81,14 @@ const PostComponent = (props) => {
             </div>
           </div>
         ) : (
-          <div style={{ fontSize: 19, color: "#5C5C5C" }}>
+          <div className="subheading-css">
             {props.subheading}
           </div>
         )}
 
         {props.heading ===
         "Finance & Investment Elite Social Mixer @Lujiazui" ? (
-          <div
-            style={{
-              width: 652,
-              marginTop: 10,
-              height: 38,
-              borderRadius: 8,
-              border: "1px solid #A9AEB8",
-              color: "#E56135",
-              fontSize: 13,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="visit-website-css">
             Visit Website
           </div>
         ) : (
@@ -138,20 +119,7 @@ const PostComponent = (props) => {
         )}
 
         {props.heading === "Software Developer" ? (
-          <div
-            style={{
-              width: 652,
-              marginTop: 10,
-              height: 38,
-              borderRadius: 8,
-              border: "1px solid #A9AEB8",
-              color: "#02B875",
-              fontSize: 13,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="apply-jobs-css" >
             Apply on Timesjobs
           </div>
         ) : (
@@ -202,7 +170,6 @@ const PostComponent = (props) => {
         </div>
       </div>
     </div>
-   
   );
 };
 

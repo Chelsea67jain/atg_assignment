@@ -37,11 +37,127 @@
   }
 }
 
-.img-style{
-  width:1440;
-  height:440
+.img-style {
+  width: 1440;
+  height: 440;
 }
 
+.Image-text-style {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  z-index: 1;
+  color: #fff;
+  font-family: IBM Plex Sans, sans serif;
+}
+
+.Write-post-btn-css {
+  width: 143px;
+  height: 36px;
+  background-color: #edeef0;
+  
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.Post-navbar-css {
+  position: relative;
+  top: 50px;
+  left: 220px;
+  width: 1040px;
+  font-size: 14px;
+  display: flex;
+  align-items: "center";
+  flex-direction: "row";
+}
+
+.Post-component-div {
+  width: 692px;
+
+  position: relative;
+  top: 50px;
+  left: 220px;
+  margin-top: 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+
+.img-div img {
+  max-width: 100%;
+}
+
+.bannerimage-css {
+  width: 690px;
+  height: 220px;
+}
+.heading-css {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+}
+.three-dots-css {
+  display: flex;
+  justify-content: flex-end;
+}
+.subheading-css {
+  font-size: 19px;
+  color: #5c5c5c;
+}
+.visit-website-css {
+  width: 652px;
+  margin-top: 10px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #a9aeb8;
+  color: #e56135;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apply-jobs-css {
+  width: 652px;
+  margin-top: 10px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #a9aeb8;
+  color: #02b875;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-posts-css {
+  color: #000;
+  font-size: 16;
+}
+
+.nav-item a{
+  display:block
+}
+.navbar-btn-css{
+   position: absolute;
+          display: flex;
+          left: 800px;
+          font-family: IBM Plex Sans,sans-serif
+}
+
+.leave-group-css{
+   width: 134px;
+                height: 36px;
+                color: #6A6A6B;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                position: relative;
+                left: 10px,
+}
 
 @media (max-width: 768px) {
   .navbar-md-hide {
@@ -49,15 +165,60 @@
   }
 }
 
-.img-div img {
-    max-width: 100%;
-    
+@media (max-width: 575.98px) {
+  .Image-text-style {
+    display: none !important;
+  }
+  .Write-post-btn-css {
+    display: none !important;
+  }
+  .Post-component-div {
+    width: 450px;
+    position: relative;
+    top: 20px;
+    left: 0px;
+    margin-top: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+  }
+  .bannerimage-css {
+    width: 450px;
+    height: 220px;
   }
 
+  .heading-css {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+  }
+  .subheading-css {
+    font-size: 14px;
+  }
+  .visit-website-css {
+    width: 430px;
+  }
 
- 
+  .apply-jobs-css {
+    width: 430px;
+  }
+  .Post-navbar-css {
+    position: relative;
+    top: 10px;
+    left: 5px;
+  }
+  .all-posts-css {
+    font-weight: bolder;
+  }
+ .navbar-btn-css{
+   left:300px;
+   top:-250px;
+   background-color: transparent;
+ }
 
-  @media screen and (max-width:375){
+.leave-group-css{
   
-  }
+                color: #000;
+}
 
+}

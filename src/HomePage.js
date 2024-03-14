@@ -21,15 +21,9 @@ export default function HomePage() {
     <div style={{ width: 1440 }}>
       <Header />
       <div className="container-fluid" style={{ position: "relative" }}>
-         <div class="col-4 col-lg-6 col-xl-12 img-div" > 
+         <div class="col-5 col-sm-8 col-md-10 col-lg-12 col-xl-12 img-div" > 
           <img src="/img3.jpg" className="img-fluid"   />
-          <div style={{position: "absolute",
-              top: "60%",
-              left: "15%",
-              zIndex: 1,
-              color: "#fff",
-              fontFamily: "IBM Plex Sans,sans serif",
-    }}>
+          <div className="Image-text-style">
             <div style={{ fontSize: 32, fontWeight: "bold" }}>
               {" "}
               Computer Engineering
