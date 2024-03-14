@@ -98,6 +98,8 @@
   margin-top: 10px;
   font-weight: bold;
   display: flex;
+  
+  
 }
 .three-dots-css {
   display: flex;
@@ -191,6 +193,7 @@
     margin-top: 10px;
     font-weight: bold;
     display: flex;
+    width:350px;
   }
   .subheading-css {
     font-size: 14px;
@@ -219,6 +222,11 @@
 .leave-group-css{
   
                 color: #000;
+}
+.three-dots-css {
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 }
